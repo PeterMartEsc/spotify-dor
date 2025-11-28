@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Spotify v2</title>
+    <title>JSpotify</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Mini Spotify</h1>
+    <h1>JSpotify</h1>
+
     <div class="item item-1" data-title="In the Pool" data-artist="Kensuke Ushio" data-cover="assets/images/cover1.jpg">
         <div class="cover cv1"></div>
         <div class="vinyl">
@@ -16,7 +18,7 @@
             </div>
         </div>
     </div>
-    <br>
+
     <div class="item item-2" data-title="Tokyo Reggie" data-artist="Masayoshi Takanaka" data-cover="assets/images/cover2.jpg">
         <div class="cover cv2"></div>
         <div class="vinyl">
@@ -25,7 +27,7 @@
             </div>
         </div>
     </div>
-    <br>
+
     <div class="item item-3" data-title="Billie Jean" data-artist="Michael Jackson" data-cover="assets/images/cover3.jpg">
         <div class="cover cv3"></div>
         <div class="vinyl">
@@ -34,42 +36,21 @@
             </div>
         </div>
     </div>
-    
-    <footer class="player-bar">
-        <div class="container-flex">
-            <div class="player-info">
-                <div class="player-cover-thumb">
-                    <img class="cover-player" src="./assets/images/empty-cover.png" alt="cover1">
-                </div>
-                <div class="player-texts">
-                    <div class="player-title"><b>Nada reproduciéndose</b></div>
-                    <div class="player-artist">Haz click en una canción</div>
-                </div>
-            </div>
 
-            <div class="player-controls">
-                <span class="icon icon-play">
-                    <img class="player-button" src="./assets/images/play-icon.png" alt="cover1">
-                </span>
-                <!-- <button class="player-toggle" aria-label="Play/Pause">
-                    <span class="icon icon-play">
-                        <img class="cover-player" src="./assets/images/empty-cover.png" alt="cover1">
-                    </span>
-                </button> -->
-                <!-- <svg width="50px" height="50">
-                    <defs>
-                        <g>
-                            <circle fill="green" r="25" id="button"/>
-                        </g>
-                        <g>
-                            <polyline id="player" points="0,0 20,12.5 0,25" fill="black"/>
-                        </g>
-                    </defs>
-                    
-                    <use xlink:href="#button" x="25" y="25" />
-                    <use xlink:href="#player" x="18" y="12" />
-                </svg> -->
+    <!-- Barra inferior tipo Spotify -->
+    <footer class="player-bar">
+        <div class="player-info">
+            <div class="player-cover-thumb"></div>
+            <div class="player-texts">
+                <div class="player-title">Nada reproduciéndose</div>
+                <div class="player-artist">Haz click en una canción</div>
             </div>
+        </div>
+
+        <div class="player-controls">
+            <button class="player-toggle" aria-label="Play/Pause">
+                <span class="icon icon-play"></span>
+            </button>
         </div>
 
         <div class="player-progress">
@@ -82,4 +63,5 @@
     </footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>
